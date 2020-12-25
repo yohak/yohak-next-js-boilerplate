@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "jsx": "react",
+    "types": [
+      "jest",
+      "node"
+    ],
+    "isolatedModules": true
+  },
+  "files": [],
+  "include": [
+    "src/**/*.spec.ts"
+  ]
+}
