@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/html5reset.css";
 import { AppProps } from "next/app";
 import { RecoilRoot } from "recoil";
 
