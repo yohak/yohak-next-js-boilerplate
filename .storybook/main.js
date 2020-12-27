@@ -7,4 +7,7 @@ module.exports = {
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
   ],
+  babel: async (options) => ({
+    plugins: ["@emotion/babel-plugin"],
+  }),
 };
