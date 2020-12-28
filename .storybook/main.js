@@ -6,6 +6,7 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-docs",
     "@storybook/addon-a11y",
+    "storybook-addon-next-router",
   ],
   babel: async (options) => ({
     plugins: ["@emotion/babel-plugin"],
