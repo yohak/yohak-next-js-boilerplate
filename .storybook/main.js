@@ -1,16 +1,13 @@
 module.exports = {
   stories: ["../src/components/**/*.stories.@(tsx|mdx)"],
   addons: [
-    "@storybook/addon-controls",
-    "@storybook/addon-links",
-    "@storybook/addon-backgrounds",
-    "@storybook/addon-actions",
-    "@storybook/addon-docs",
+    "@storybook/addon-essentials",
     "@storybook/addon-a11y",
-    "@storybook/addon-viewport",
+    "@storybook/addon-links",
     "storybook-addon-next-router",
   ],
   babel: async (options) => ({
-    plugins: ["@emotion/babel-plugin"],
+    ...options,
+    presets: [...options.presets, "@emotion/babel-preset-css-prop"],
   }),
 };
