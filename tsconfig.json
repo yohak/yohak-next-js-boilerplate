@@ -19,16 +19,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "downlevelIteration": true,
-    "baseUrl": "src/definitions",
-    "paths": {
-      "animejs": [
-        "animejs/index.d.ts"
-      ]
-    },
     "types": [
       "@emotion/react/types/css-prop",
       "jest"
-    ]
+    ],
+    "incremental": true
   },
   "exclude": [
     "node_modules",
